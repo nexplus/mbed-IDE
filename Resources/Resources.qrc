@@ -1,0 +1,40 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>images/new.png</file>
+    <file>images/print.png</file>
+    <file>images/save.png</file>
+    <file>images/undo.png</file>
+    <file>images/splash.png</file>
+    <file>images/close.png</file>
+    <file>images/saveas.png</file>
+    <file>images/start.png</file>
+    <file>images/stop.png</file>
+    <file>images/localServer.png</file>
+    <file>images/connect.png</file>
+    <file>images/info.png</file>
+    <file>images/bookmark.png</file>
+    <file>images/build.png</file>
+    <file>images/comment.png</file>
+    <file>images/database.png</file>
+    <file>images/download.png</file>
+    <file>images/forward.png</file>
+    <file>images/reload.png</file>
+    <file>images/upload.png</file>
+    <file>images/delete.png</file>
+    <file>images/news.png</file>
+    <file>images/image.png</file>
+    <file>images/flag.png</file>
+    <file>images/find.png</file>
+    <file>images/settings.png</file>
+    <file>images/player_pause.png</file>
+    <file>images/player_stop.png</file>
+    <file>images/player_start.png</file>
+    <file>images/add.png</file>
+    <file>images/del.png</file>
+    <file>images/open.png</file>
+	<file>images/log.png</file>
+	<file>images/logo.png</file>
+	
+	<file>resources/info/index.html</file>
+</qresource>
+</RCC>
