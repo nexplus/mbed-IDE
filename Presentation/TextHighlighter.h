@@ -8,12 +8,12 @@
 
 class QTextDocument;
 
-class RHighlighter : public QSyntaxHighlighter
+class TextHighlighter : public QSyntaxHighlighter
 {
     Q_OBJECT
 
 public:
-    RHighlighter(QTextDocument *parent = 0);
+    TextHighlighter(QTextDocument *parent = 0);
 
 protected:
     void highlightBlock(const QString &text);

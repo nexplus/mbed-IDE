@@ -1,4 +1,4 @@
-#include "EditorWindow.h"
+#include "Presentation/EditorWindow.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])

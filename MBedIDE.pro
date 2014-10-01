@@ -12,7 +12,16 @@ TARGET = MBedIDE
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        EditorWindow.cpp
+SOURCES += main.cpp \
+    Presentation/EditorWindow.cpp \
+    Presentation/TextHighlighter.cpp \
+    Presentation/TextLineNumbers.cpp
 
-HEADERS  += EditorWindow.h
+HEADERS  += \
+    Presentation/EditorWindow.h \
+    Presentation/TextEditWithLineNumbers.h \
+    Presentation/TextHighlighter.h \
+    Presentation/TextLineNumbers.h
+
+RESOURCES += \
+    Resources/Resources.qrc

@@ -1,8 +1,8 @@
 #include <QtGui>
 
-#include "rhighlighter.h"
+#include "TextHighlighter.h"
 
-RHighlighter::RHighlighter(QTextDocument *parent) : QSyntaxHighlighter(parent)
+TextHighlighter::TextHighlighter(QTextDocument *parent) : QSyntaxHighlighter(parent)
 {
     RHighlightingRule rule;
 
@@ -47,7 +47,7 @@ RHighlighter::RHighlighter(QTextDocument *parent) : QSyntaxHighlighter(parent)
     highlightingRules.append(rule);
 }
 
-void RHighlighter::highlightBlock(const QString &text)
+void TextHighlighter::highlightBlock(const QString &text)
 {
     foreach (RHighlightingRule rule, highlightingRules)
     {

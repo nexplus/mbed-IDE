@@ -3,17 +3,17 @@
 
 #include <QTextEdit>
 
-#include "rlinenumbers.h"
+#include "TextLineNumbers.h"
 
-class TextEdit : public QTextEdit
+class TextEditWithLineNumbers : public QTextEdit
 {
 	Q_OBJECT
 
 public:
-    TextEdit(QWidget *parent = 0)
+    TextEditWithLineNumbers(QWidget *parent = 0)
     {
     	QTextEdit();
-    	m_lineNumbers = new LineNumbers(this);    	
+        m_lineNumbers = new TextLineNumbers(this);
     	connect(m_lineNumbers, SIGNAL( digitNumbersChanged() ), this, SLOT( slotAdjustSize() ) );
     	
     	setViewportMargins( m_lineNumbers->width(), 0, 0, 0 );
@@ -21,7 +21,7 @@ public:
     }
 
 private:
-  	LineNumbers *m_lineNumbers;
+    TextLineNumbers *m_lineNumbers;
   	
 private slots:
 	

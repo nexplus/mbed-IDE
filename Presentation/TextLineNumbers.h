@@ -6,7 +6,7 @@
 //
 class QTextEdit;
 
-class LineNumbers : public QWidget
+class TextLineNumbers : public QWidget
 {
 	Q_OBJECT
 	Q_PROPERTY( int digitNumbers READ digitNumbers WRITE setDigitNumbers )
@@ -14,7 +14,7 @@ class LineNumbers : public QWidget
 	Q_PROPERTY( QColor backgroundColor READ backgroundColor WRITE setBackgroundColor )
 	//
 public:
-	LineNumbers( QTextEdit* edit);
+    TextLineNumbers( QTextEdit* edit);
 	//
 	void setDigitNumbers( int );
 	int digitNumbers() const;

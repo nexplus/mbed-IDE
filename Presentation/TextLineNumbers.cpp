@@ -1,4 +1,4 @@
-#include "rlinenumbers.h"
+#include "TextLineNumbers.h"
 //
 #include <QTextEdit>
 #include <QGridLayout>
@@ -9,8 +9,7 @@
 #include <QDebug>
 #include <QDialog>
 
-LineNumbers::LineNumbers( QTextEdit* edit)
-	: QWidget( (QWidget *)edit ), m_textEdit( edit )
+TextLineNumbers::TextLineNumbers( QTextEdit* edit)	: QWidget( (QWidget *)edit ), m_textEdit( edit )
 {
 	setObjectName( "editorZone" );
 	setAutoFillBackground( true );
@@ -21,7 +20,7 @@ LineNumbers::LineNumbers( QTextEdit* edit)
 	setMouseTracking( true );
 }
 //
-void LineNumbers::paintEvent( QPaintEvent* )
+void TextLineNumbers::paintEvent( QPaintEvent* )
 {
 	int contentsY = m_textEdit->verticalScrollBar()->value();
 	qreal pageBottom = contentsY + m_textEdit->viewport()->height();
@@ -46,7 +45,7 @@ void LineNumbers::paintEvent( QPaintEvent* )
 	p.end();
 }
 
-void LineNumbers::setDigitNumbers( int i )
+void TextLineNumbers::setDigitNumbers( int i )
 {
 	if ( i == mDigitNumbers )
 		return;
@@ -56,12 +55,12 @@ void LineNumbers::setDigitNumbers( int i )
 	emit digitNumbersChanged();
 }
 //
-int LineNumbers::digitNumbers() const
+int TextLineNumbers::digitNumbers() const
 {
 	return mDigitNumbers;
 }
 //
-void LineNumbers::setTextColor( const QColor& c )
+void TextLineNumbers::setTextColor( const QColor& c )
 {
 	if ( c == mTextColor )
 		return;
@@ -72,12 +71,12 @@ void LineNumbers::setTextColor( const QColor& c )
 	emit textColorChanged( mTextColor );
 }
 //
-const QColor& LineNumbers::textColor() const
+const QColor& TextLineNumbers::textColor() const
 {
 	return mTextColor;
 }
 //
-void LineNumbers::setBackgroundColor( const QColor& c )
+void TextLineNumbers::setBackgroundColor( const QColor& c )
 {
 	if ( c == mBackgroundColor )
 		return;
@@ -88,12 +87,12 @@ void LineNumbers::setBackgroundColor( const QColor& c )
 	emit backgroundColorChanged( mBackgroundColor );
 }
 //
-const QColor& LineNumbers::backgroundColor() const
+const QColor& TextLineNumbers::backgroundColor() const
 {
 	return mBackgroundColor;
 }
 
-void LineNumbers::setDefaultProperties()
+void TextLineNumbers::setDefaultProperties()
 {
 	// Default properties
 	setFont( m_textEdit->font() );
