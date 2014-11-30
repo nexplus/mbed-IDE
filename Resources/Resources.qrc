@@ -1,38 +1,39 @@
-<!DOCTYPE RCC><RCC version="1.0">
-<qresource>
-    <file>Icons/new.png</file>
-    <file>Icons/print.png</file>
-    <file>Icons/save.png</file>
-    <file>Icons/undo.png</file>
-    <file>Icons/splash.png</file>
-    <file>Icons/close.png</file>
-    <file>Icons/saveas.png</file>
-    <file>Icons/start.png</file>
-    <file>Icons/stop.png</file>
-    <file>Icons/localServer.png</file>
-    <file>Icons/connect.png</file>
-    <file>Icons/info.png</file>
-    <file>Icons/bookmark.png</file>
-    <file>Icons/build.png</file>
-    <file>Icons/comment.png</file>
-    <file>Icons/database.png</file>
-    <file>Icons/download.png</file>
-    <file>Icons/forward.png</file>
-    <file>Icons/reload.png</file>
-    <file>Icons/upload.png</file>
-    <file>Icons/delete.png</file>
-    <file>Icons/news.png</file>
-    <file>Icons/image.png</file>
-    <file>Icons/flag.png</file>
-    <file>Icons/find.png</file>
-    <file>Icons/settings.png</file>
-    <file>Icons/player_pause.png</file>
-    <file>Icons/player_stop.png</file>
-    <file>Icons/player_start.png</file>
-    <file>Icons/add.png</file>
-    <file>Icons/del.png</file>
-    <file>Icons/open.png</file>
-	<file>Icons/log.png</file>
-	<file>Icons/logo.png</file>
-</qresource>
+<RCC>
+    <qresource prefix="/">
+        <file>Icons/new.png</file>
+        <file>Icons/print.png</file>
+        <file>Icons/save.png</file>
+        <file>Icons/undo.png</file>
+        <file>Icons/splash.png</file>
+        <file>Icons/close.png</file>
+        <file>Icons/saveas.png</file>
+        <file>Icons/start.png</file>
+        <file>Icons/stop.png</file>
+        <file>Icons/localServer.png</file>
+        <file>Icons/connect.png</file>
+        <file>Icons/info.png</file>
+        <file>Icons/bookmark.png</file>
+        <file>Icons/build.png</file>
+        <file>Icons/comment.png</file>
+        <file>Icons/database.png</file>
+        <file>Icons/download.png</file>
+        <file>Icons/forward.png</file>
+        <file>Icons/reload.png</file>
+        <file>Icons/upload.png</file>
+        <file>Icons/delete.png</file>
+        <file>Icons/news.png</file>
+        <file>Icons/image.png</file>
+        <file>Icons/flag.png</file>
+        <file>Icons/find.png</file>
+        <file>Icons/settings.png</file>
+        <file>Icons/player_pause.png</file>
+        <file>Icons/player_stop.png</file>
+        <file>Icons/player_start.png</file>
+        <file>Icons/add.png</file>
+        <file>Icons/del.png</file>
+        <file>Icons/open.png</file>
+        <file>Icons/log.png</file>
+        <file>Icons/logo.png</file>
+        <file>Icons/avatar_placeholder.png</file>
+    </qresource>
 </RCC>

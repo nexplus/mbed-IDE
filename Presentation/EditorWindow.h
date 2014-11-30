@@ -1,10 +1,11 @@
-#ifndef EDITORWINDOW_H
-#define EDITORWINDOW_H
+#pragma once
 
 #include <QMainWindow>
 
 #include "TextEditWithLineNumbers.h"
-#include <QTreeView>
+#include <QTreeWidget>
+
+#include "../Infrastructure/WorkspaceFilesManager.h"
 
 class EditorWindow : public QMainWindow
 {
@@ -16,9 +17,22 @@ public:
 
     void createNewTabWithContent(QString content);
 
+    void updateProfileBar();
+
+public slots:
+    void closeEditorTab(int tabIndex);
+    void compileCurrentProject();
+
+    void projectsListLoaded();
+    void projectCompilationResultLoaded();
+
+
 protected:
     QTabWidget *tabWidget;
-    QTreeView *filesTreeView;
-};
+    QTreeWidget *filesTreeWidget;
+    QToolBar *toolBar;
+    QStatusBar *statusBar;
+    QMenuBar *mainMenuBar;
 
-#endif // EDITORWINDOW_H
+    QAction *profileInfoAction;
+};

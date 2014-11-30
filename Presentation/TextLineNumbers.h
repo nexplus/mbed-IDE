@@ -1,9 +1,8 @@
-#ifndef LINENUMBERS_H
-#define LINENUMBERS_H
-//
+#pragma once
+
 #include <QWidget>
 #include <QTextCursor>
-//
+
 class QTextEdit;
 
 class TextLineNumbers : public QWidget
@@ -12,7 +11,6 @@ class TextLineNumbers : public QWidget
 	Q_PROPERTY( int digitNumbers READ digitNumbers WRITE setDigitNumbers )
 	Q_PROPERTY( QColor textColor READ textColor WRITE setTextColor )
 	Q_PROPERTY( QColor backgroundColor READ backgroundColor WRITE setBackgroundColor )
-	//
 public:
     TextLineNumbers( QTextEdit* edit);
 	//
@@ -45,6 +43,3 @@ signals:
 public slots:
 	void setDefaultProperties();
 };
-//
-#endif 
-

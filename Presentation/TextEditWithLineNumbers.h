@@ -1,5 +1,4 @@
-#ifndef __TEXTEDIT_H__
-#define __TEXTEDIT_H__
+#pragma once
 
 #include <QTextEdit>
 
@@ -49,5 +48,3 @@ private slots:
 	    
 	}
 };
-
-#endif // __TEXTEDIT_H__
